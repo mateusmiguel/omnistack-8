@@ -28,12 +28,12 @@ module.exports = {
 
     const response = await axios.get(
       `https://api.github.com/users/${username}`,
-      {
-        proxy: {
-          host: "192.168.15.254",
-          port: "3128"
-        }
-      }
+      // {
+      //   proxy: {
+      //     host: "192.168.15.254",
+      //     port: "3128"
+      //   }
+      // }
     );
 
     const { name, bio, avatar_url: avatar } = response.data;
